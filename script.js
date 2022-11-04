@@ -26,7 +26,7 @@ function average(note1, note2) {
 }
 
 for(student of students) {
-  if (average() >= 7) {
+  if (average(student.firstNote, student.secondNote) >= 7) {
     alert(`A média do(a) aluno(a) ${student.name} é: ${average(student.firstNote, student.secondNote)}
     Parabéns, ${student.name}! Você foi aprovado(a) no concurso!`)
   } else {
